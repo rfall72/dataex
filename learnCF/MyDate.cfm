@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-  </head>
-  <body>
-    <cfoutput>#now()#<br/></cfoutput>
-    <cfoutput>#dateformat(now(), "m/d")#<br/></cfoutput> 
-    <cfoutput>#dateformat(now(), "mm/dd")#<br/></cfoutput>
-    <cfoutput>#dateformat(now(), "M/D")#<br/></cfoutput>
-    <cfoutput>#dateformat(now(), "yyyy")#<br/></cfoutput>
-    <cfoutput>#dateformat(now(), "medium")#<br/></cfoutput>
+    <cfoutput>
+    #now()#<br/>
+    #dateformat(now(), "m/d")#<br/> 
+    #dateformat(now(), "mm/dd")#<br/>
+    #dateformat(now(), "M/D")#<br/>
+    #dateformat(now(), "yyyy")#<br/>
+    #dateformat(now(), "medium")#<br/>
+    </cfoutput>
 
-  </body>
-</html>
+    <cfset todayDate=now()>
+	<cfoutput>
+		#dateformat(todayDate,"full")# <br/>
+	</cfoutput>
